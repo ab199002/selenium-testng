@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test Cases For LogginTest(failed)">
+    <classes>
+      <class name="com.selenium.testng.LoginTC">
+        <methods>
+          <include name="loginAdmin"/>
+          <include name="loginTestUser"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.selenium.testng.LoginTC -->
+    </classes>
+  </test> <!-- Test Cases For LogginTest(failed) -->
+  <test thread-count="5" name="Test Cases For Depends on Code(failed)">
+    <classes>
+      <class name="com.selenium.testng.LoginTC_dependson">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="loginAdmin"/>
+          <include name="logoutTestUser"/>
+        </methods>
+      </class> <!-- com.selenium.testng.LoginTC_dependson -->
+    </classes>
+  </test> <!-- Test Cases For Depends on Code(failed) -->
+  <test thread-count="5" name="Test Cases For Cross browser Test(failed)">
+    <classes>
+      <class name="com.selenium.testng.CrossBrowser">
+        <methods>
+          <include name="chrome"/>
+        </methods>
+      </class> <!-- com.selenium.testng.CrossBrowser -->
+    </classes>
+  </test> <!-- Test Cases For Cross browser Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

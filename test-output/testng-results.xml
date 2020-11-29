@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-29T16:34:42Z" name="Suite" finished-at="2020-11-29T16:36:04Z" duration-ms="82119">
+    <groups>
+    </groups>
+    <test started-at="2020-11-29T16:34:42Z" name="Test Cases For LogginTest" finished-at="2020-11-29T16:35:09Z" duration-ms="26668">
+      <class name="com.selenium.testng.LoginTC">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.selenium.testng.LoginTC@22635ba0]" started-at="2020-11-29T16:34:42Z" name="beforeTest" finished-at="2020-11-29T16:34:47Z" duration-ms="4759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="loginTestUser()[pri:0, instance:com.selenium.testng.LoginTC@22635ba0]" started-at="2020-11-29T16:34:47Z" name="loginTestUser" description="Test case to verify login functionnality  &#039;Test&#039; user." finished-at="2020-11-29T16:35:04Z" duration-ms="17199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestUser -->
+        <test-method signature="loginAdmin()[pri:1, instance:com.selenium.testng.LoginTC@22635ba0]" started-at="2020-11-29T16:35:04Z" name="loginAdmin" description="Test case to verify login functionnality  &#039;Admin&#039; user." finished-at="2020-11-29T16:35:08Z" duration-ms="3945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAdmin -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.selenium.testng.LoginTC@22635ba0]" started-at="2020-11-29T16:35:08Z" name="afterTest" finished-at="2020-11-29T16:35:09Z" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.selenium.testng.LoginTC -->
+    </test> <!-- Test Cases For LogginTest -->
+    <test started-at="2020-11-29T16:35:09Z" name="Test Cases For Depends on Code" finished-at="2020-11-29T16:35:25Z" duration-ms="16522">
+      <class name="com.selenium.testng.LoginTC_dependson">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.selenium.testng.LoginTC_dependson@d706f19]" started-at="2020-11-29T16:35:09Z" name="beforeTest" finished-at="2020-11-29T16:35:12Z" duration-ms="3272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="loginAdmin()[pri:0, instance:com.selenium.testng.LoginTC_dependson@d706f19]" started-at="2020-11-29T16:35:12Z" name="loginAdmin" description="Test case to verify login functionnality  &#039;Admin&#039; user." finished-at="2020-11-29T16:35:21Z" duration-ms="9219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAdmin -->
+        <test-method signature="logoutTestUser()[pri:1, instance:com.selenium.testng.LoginTC_dependson@d706f19]" started-at="2020-11-29T16:35:21Z" name="logoutTestUser" description="Test case to verify login functionnality  &#039;Test&#039; user." finished-at="2020-11-29T16:35:24Z" depends-on-methods="com.selenium.testng.LoginTC_dependson.loginAdmin" duration-ms="3344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTestUser -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.selenium.testng.LoginTC_dependson@d706f19]" started-at="2020-11-29T16:35:24Z" name="afterTest" finished-at="2020-11-29T16:35:25Z" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.selenium.testng.LoginTC_dependson -->
+    </test> <!-- Test Cases For Depends on Code -->
+    <test started-at="2020-11-29T16:35:25Z" name="Test Cases For Cross browser Test" finished-at="2020-11-29T16:36:04Z" duration-ms="38867">
+      <class name="com.selenium.testng.CrossBrowser">
+        <test-method signature="chrome()[pri:0, instance:com.selenium.testng.CrossBrowser@6973bf95]" started-at="2020-11-29T16:35:25Z" name="chrome" finished-at="2020-11-29T16:35:36Z" duration-ms="11185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chrome -->
+        <test-method signature="firefox()[pri:1, instance:com.selenium.testng.CrossBrowser@6973bf95]" started-at="2020-11-29T16:35:36Z" name="firefox" finished-at="2020-11-29T16:35:50Z" duration-ms="13979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefox -->
+        <test-method signature="edge()[pri:2, instance:com.selenium.testng.CrossBrowser@6973bf95]" started-at="2020-11-29T16:35:50Z" name="edge" finished-at="2020-11-29T16:36:04Z" duration-ms="13690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edge -->
+      </class> <!-- com.selenium.testng.CrossBrowser -->
+    </test> <!-- Test Cases For Cross browser Test -->
+  </suite> <!-- Suite -->
+</testng-results>

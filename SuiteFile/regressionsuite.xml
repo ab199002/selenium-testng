@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test Cases For LogginTest">
+    <classes>
+      <class name="com.selenium.testng.LoginTC"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test Cases For Depends on Code">
+    <classes>
+      <class name="com.selenium.testng.LoginTC_dependson"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test Cases For Cross browser Test">
+    <classes>
+      <class name="com.selenium.testng.CrossBrowser"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
